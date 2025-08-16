@@ -1,0 +1,2 @@
+This is a new file created using fstream in C++.
+It demonstrates how to write to a file.

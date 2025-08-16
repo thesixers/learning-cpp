@@ -1,0 +1,232 @@
+<% comments %>
+
+%> data types %>
+* integers <% will have properties and methods just like in js and we will copy all their theirs if needed %>
+* floats <% will have properties and methods just like in js and we will copy all their theirs if needed %>
+* strings <% will have properties and methods just like in js and we will copy all their theirs if needed %>
+* arrays <% will have properties and methods just like in js and we will copy all their theirs if needed  %>
+* objects <% will have properties and methods just like in js and we will copy all their theirs if needed %>
+
+* bool
+* functions
+* classes
+* null
+* undefined
+
+<% varables syntax %>
+int num = 5; <% for integers %> 
+
+str name = "ahmed"; <% strings %>
+
+flt num = 0.5; <% floats %>
+
+bool isCorrect = true; <% bool %>
+
+<% arrays %>
+arr newArray = [1,2,3,4,5];
+
+%> objects %>
+obj user = { 
+    name<str>: "nnamdi", 
+    age<int>: 22
+}; 
+
+{name , function}  <% object distructuring %>
+
+<% 
+ functions 
+ syntax
+<%
+
+type add(type parameter):
+    return %> an integer %> 5 + 5;
+
+
+(type)::int outer():
+    int inner(type parameter):
+        return 5;
+
+    return inner;
+
+
+
+
+<% it can be written like this but only when the return value is void or not returning anything %>
+dosomthing(): 
+
+<%
+    function type will depend on 
+    the return value which would include int, str, arr, obj, bool, null, undefined etc then void
+    if it is not returning anything 
+%>
+
+<%
+Classes & Objects
+Class declaration
+
+Constructor
+
+Methods
+
+Properties
+
+Inheritance
+
+Static methods & properties
+
+Interfaces / Abstract classes
+
+Encapsulation (public/private/protected)
+%>
+class Person
+    Person(parameters):
+        <% logic %> 
+    public:
+        str talk():
+            return "my name is " + name;
+        
+    private:
+    protected:
+        str name;
+        int age;
+
+    @dist Person(){
+        <% distructor logic %>
+    }
+
+
+<% for logging to console %>
+log()
+
+<% getting input from the console %> 
+get()
+
+<%  Operators %>
+
+Arithmetic (+, -, *, /, %>)
+
+Assignment (=, +=, -=)
+
+Comparison (==, !=, <, >, <=, >=)
+
+Logical (and, or, not)
+
+check(in, is)
+
+<% String concatenation will be js py style using f strings but mine would be "t" instead of "f"%>
+str name = "joe";
+log(t"my name is {name}")
+
+<% if statment %> 
+if (condition):
+    <% logic %>
+else:
+    <% logic %>
+
+<% switch statment %> 
+switch(condition)
+    match 1:
+        <% logic %>
+        break;
+    default:
+
+
+<% loops %>
+<%
+    while loop
+    for loop
+    forin
+%>
+
+while(condition):
+    <% logic %> 
+
+for(int x = 0; condition, increment):
+    <% loop logic %> 
+
+for(int x in array):
+    <% loop logic %>
+
+<% tonery if else %>
+log("equal") if x == y  else log("not equal")
+
+<% tonery loop %>
+for x in array;
+
+<% use case %>
+type newarray = [x*2 for x in array]
+
+<%
+ Modules & Imports
+ Importing other files
+ Exporting functions/classes
+%>
+
+get "filename" as name
+get "filename" as {name , function}  <% object distructuring %>
+
+<% export we will use "export" key word %>
+export (type)::int outer():
+        int inner(type parameter):
+            return 5;
+
+        return inner;
+
+
+10. Standard Library (Your “Built-in” Tools)
+Math utilities
+
+String utilities
+
+File I/O
+    type fileContent = fs.read(filepath)
+    fs.write(fitypeowrite, fileContent)
+    <% get the remaining from js and add on the go chunk by chunk read and write so it must not read everything before writing maybe get it from py %>
+
+Date & time
+<% copy from js date object %>
+
+Networking (HTTP requests)
+<% copy from js but we will still use py styled syntax (using indentation) when needed %>
+
+JSON parsing
+
+CLI input/output
+get()
+log()
+
+OS/system interaction
+<% copy from py %>
+
+
+<% and finally the async await i want the language to be asyncronus then when something is need to be awaited just used the await keyword %>
+
+// Math
+type pi = Math.PI
+type rounded = Math.round(3.7)
+
+// File I/O
+type content = fs.read("data.txt")
+fs.write("output.txt", content)
+
+// Date & Time
+type now = Date.now()
+
+// Networking
+type response = await http.get("https://api.example.com/data")
+
+// JSON
+type obj = JSON.parse('{"key":"value"}')
+type jsonStr = JSON.stringify(obj)
+
+// CLI
+log("Enter your name:")
+type inputName = get()
+
+fetchData():
+    let data = await http.get("https://api.example.com/data")
+    log(t"Received data: {data}")
+
+// Calling async function
+fetchData()
+
