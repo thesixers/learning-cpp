@@ -14,7 +14,7 @@ int main(){
         // open the file we are writing to
         ofstream writeFile(wf);
         // open the file we are reading from 
-        ifstream readFile(rf);
+        ifstream readFile(rf); ifstream readFile(rf);
 
         // check if the files are open
         if(!writeFile.is_open() || !readFile.is_open()){
